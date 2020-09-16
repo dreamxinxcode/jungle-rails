@@ -1,3 +1,4 @@
+<% if enhanced_cart.count > 0 %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -48,5 +49,10 @@
       <% end %>
     </div>
   </div>
-
 </section>
+  <% else %>
+        <div>
+          <h3>Your cart is empty</h3>
+          <p>Please return to the <%= link_to 'homepage', :root %> to continue shopping.</p>       
+        </div>
+  <% end %>
