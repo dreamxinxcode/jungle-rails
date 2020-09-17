@@ -20,6 +20,8 @@ class OrdersController < ApplicationController
   end
 
   private
+  
+  helper_method :order_items
 
   def empty_cart!
     # empty hash means no products in cart :)
